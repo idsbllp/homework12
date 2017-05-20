@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style type="text/css">
+        .undone {
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root">
+        <h1 data-model="title" data-class="clicks">
+            <!-- <div></div> -->
+        </h1>
+        <!-- <input type="text" data-model="title" name=""> -->
+        <div>
+            <div data-model="user" class="foo" data-class="user"></div>
+            <ul>
+                <li data-list="todos" data-class="user">
+                    <p data-class="todos:done" data-model="todos:creator"></p>
+                    <p data-model="todos:date">
+                        <div data-model="title"></div>
+                    </p>
+                    <p data-model="todos:content"></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="root">
+        
+    </div>
+
+    <!-- <script type="text/javascript" src="../index.js"></script> -->
+    <script type="text/javascript" src="../dist/index.js"></script>
+    <script type="text/javascript">
+    //to use:
+
+    let data = {
+        title: 'haha',
+        user: 'foo',
+        clicks: 'class-bar',
+        todos: [{
+            creator: 'keal',
+            done: 'undone',
+            content: 'writeMVVM',
+            date: '2016-11-17'
+        }, {
+            creator: 'mirone',
+            done: 'undone',
+            content: 'writeNode',
+            date: '2016-12-17'
+        }]
+    }
+    var ass = new Mvvm('#root', data, {
+        clicks: function() {
+            console.log('click')
+        }
+    });
+    var foo = new Mvvm('.root', data, {
+        clicks: function() {
+            console.log('click')
+        }
+    });
+    ass.data.user = 'wpcaonoasndfk;';
+    ass.data.todos[0].creator = 'wpcaonoasndfk;';
+
+    </script>
+</body>
+
+</html>

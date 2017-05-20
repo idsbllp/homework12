@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+
+<div id="counter-event-example">
+    <div class="block">
+        {{ block }}
+    </div>
+    <input type="text" data-name="block" name="" v-model="block">
+</div>
+<!-- vue -->
+  <script src="../node_modules/vue/dist/vue.min.js"></script>
+  <script>
+    var ass = new Vue({
+      el: '#counter-event-example',
+      data: {
+        total: 0,
+        block: 'input'
+      },
+      methods: {
+        incrementTotal: function () {
+          // this.total += 1
+          // this.total = 'hah';
+          // this.data.total = 'haha'
+        }
+      }
+    })
+  </script>
+</body>
+</html>
