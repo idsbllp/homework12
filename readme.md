@@ -18,7 +18,7 @@
 > 还是参考这个吧 [Vue TodoList](https://cn.vuejs.org/v2/examples/todomvc.html)
 
 
-或者 todoist.png
+或者 ![todoist.png](./todoist.png)
 
 **要求**： 
 
