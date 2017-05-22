@@ -13,6 +13,11 @@
 
 **实现**： 可以参考 [todoist](https://todoist.com)
 
+#### 修改
+
+> 还是参考这个吧 [Vue TodoList](https://cn.vuejs.org/v2/examples/todomvc.html)
+
+
 或者 todoist.png
 
 **要求**： 
